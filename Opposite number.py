@@ -5,13 +5,13 @@ log = logging.getLogger(__name__)
 
 def make_negative(num: int | float):
     try:
-        return -abs(num)
+        return -(num)
     except TypeError:
         return None
 
 
 def main():
-    return make_negative('asd')
+    return make_negative(1)
 
 
 if __name__ == "__main__":
