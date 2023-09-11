@@ -2,11 +2,7 @@ arr = [[10, 0], [3, 5], [5, 8]]
 
 
 def numbers(bus_stops):
-    count = 0
-    for stop in bus_stops:
-        count += stop[0]
-        count -= stop[1]
-    return count
+    return sum([stop[0] - stop[1] for stop in bus_stops])
 
 
 def main():
