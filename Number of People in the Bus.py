@@ -11,5 +11,5 @@ def main():
 
 if __name__ == '__main__':
     res = main()
-    assert res, 5
+    assert res == 5
     print(res)
